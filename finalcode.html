@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Student Registration Form</title>
+	<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="student.php" method="post" name="StudentRegistration" onsubmit="return(validate());">
+	<table cellpadding="2" width="70%" align="center" cellspacing="2">
+		<tr>
+			<td colspan=2>
+				<img src="123.png" style="width: 100%">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2>
+			<center><font size=5><b>Recruitment form for Taarangana</b></font></center>
+			</td>
+		</tr>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" name="studentname" id="studentname" size="30"></td>
+		</tr>
+		<tr>
+			<td>Branch</td>
+			<td>
+				<select name="Branch">
+					<option value="-1">select..</option>
+					<option value="CSE">CSE</option>
+					<option value="IT">IT</option>
+					<option value="ECE">ECE</option>
+					<option value="MAE">MAE</option>
+		                        <option value="B.Arch">B.Arch</option>
+		                         <option value="MCA">MCA</option>
+				</select>
+			</td>
+		</tr>
+        <tr>
+            <td>Year</td>
+            <td>
+	            <input type="radio" name="Year" value="1" size="10">1
+	            <input type="radio" name="Year" value="2" size="10">2
+	            <input type="radio" name="Year" value="3" size="10">3
+	            <input type="radio" name="Year" value="4" size="10">4
+            </td>
+        </tr>
+		<tr>
+          	<td>Phone number</td>
+			<td><input type="text" name="Phonenumber" id="Phonenumber" size="30"></td>
+		</tr>
+		<tr>
+			<td>EmailId</td>
+			<td><input type="text" name="emailid" id="emailid" size="30"></td>
+		</tr>
+		<tr>
+	        <td>Team Preference</td>
+			<td>
+				<div><input type="checkbox" name="teamPreference[]" value="HR and Logistics">HR and Logistics</div>
+				<div><input type="checkbox" name="teamPreference[]" value="Creative">Creative</div>
+				<div><input type="checkbox" name="teamPreference[]" value="Website">Website</div>
+                                <div><input type="checkbox" name="teamPreference[]" value="Event Management">Event Management</div>
+                                <div><input type="checkbox" name="teamPreference[]" value="Public relations">Public relations</div>
+                                <div><input type="checkbox" name="teamPreference[]" value="Content">Content</div>
+				<div><input type="checkbox" name="teamPreference[]" value="Sponsorship">Sponsorship</div>
+			</td>
+		</tr>
+        <tr>
+			<td>What does taarangana mean to you?</td>
+			<td>
+				<textarea name="Whatdoestaaranganameantoyou" id="Whatdoestaaranganameantoyou" rows="5"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="reset">
+			</td>
+			<td colspan="2">
+				<input type="submit" value="Submit Form" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2>
+				<a href="excel.php">Download CSV</a>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
